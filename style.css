@@ -2,14 +2,14 @@
 
 :root {
   --green: rgb(0, 131, 0);
-  --blue: rgb(9, 9, 47);
+  --blue: rgb(8, 8, 81);
   --red: rgb(118, 19, 19);
   --yellow: rgb(245, 245, 29);
   --orange: rgb(255, 167, 5);
   --black: rgb(4, 4, 4);
-  --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-  --border: 2rem solid rgba(0, 0, 0, 0.1);
-  --outline: 1rem solid rgba(0, 0, 0, 0.1);
+  --box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+  --border: 0.2rem solid rgba(0, 0, 0, 0.1);
+  --outline: 0.1rem solid rgba(0, 0, 0, 0.1);
   --outline-hover: 0.2rem solid var(--black);
 }
 
@@ -39,6 +39,22 @@ body {
 
 section {
   padding: 2rem 9%;
+}
+
+.heading {
+  text-align: center;
+  padding: 2rem 0;
+  padding-bottom: 3rem;
+  font-size: 3.5rem;
+  color: var(--blue);
+}
+
+.heading span {
+  background: var(--green);
+  color: #fff;
+  display: inline-block;
+  padding: 0.5rem 3rem;
+  clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
 }
 
 .btn {
@@ -301,6 +317,44 @@ section {
   line-height: 1.8;
 }
 
+.features .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
+}
+
+.features .box-container .box {
+  padding: 3rem 2rem;
+  background: #fff;
+  outline: var(--outline);
+  outline-offset: -1rem;
+  text-align: center;
+  box-shadow: var(--box-shadow);
+}
+
+.features .box-container .box:hover {
+  outline: var(--outline-hover);
+  outline-offset: 0;
+}
+
+.features .box-container .box img {
+  margin: 1rem 0;
+  height: 18rem;
+}
+
+.features .box-container .box h3 {
+  font-size: 2.5rem;
+  line-height: 1.8;
+  color: var(--blue);
+}
+
+.features .box-container .box p {
+  font-size: 1.5rem;
+  line-height: 1.8;
+  color: rgb(74, 74, 74);
+  padding: 1rem 0;
+}
+
 /* media queries */
 
 @media (max-width: 1091px) {
@@ -351,5 +405,9 @@ section {
 
   .header .search-form {
     width: 90%;
+  }
+
+  .heading {
+    font-size: 2.5rem;
   }
 }
