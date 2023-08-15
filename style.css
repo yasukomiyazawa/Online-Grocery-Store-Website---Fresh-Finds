@@ -543,6 +543,75 @@ section {
   padding: 0.5rem 0;
 }
 
+.footer {
+  background: #fff;
+}
+
+.footer .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1.5rem;
+}
+
+.footer .box-container .box h3 {
+  font-size: 2.2rem;
+  color: var(--blue);
+  padding: 1rem 0;
+}
+
+.footer .box-container .box i {
+  color: var(--green);
+  padding-right: 0.5rem;
+}
+
+.footer .box-container .box a:hover i {
+  padding-right: 2rem;
+}
+
+.footer .box-container .box a {
+  font-size: 1.5rem;
+  color: var(--light-grey);
+  padding: 1rem 0;
+  display: block;
+}
+
+.footer .box-container .box p {
+  font-size: 1.5rem;
+  line-height: 1.8;
+  color: var(--light-grey);
+  padding: 1rem 0;
+}
+
+.footer .box-container .box .email {
+  margin: 0.7rem 0;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background: #eee;
+  font-size: 1.6rem;
+  color: var(--black);
+  text-transform: none;
+  width: 100%;
+}
+
+.footer .box-container .box .payment-img {
+  margin-top: 2rem;
+  height: 3rem;
+}
+
+.footer .credit {
+  text-align: center;
+  margin-top: 1rem;
+  padding: 1rem;
+  padding-top: 2.5rem;
+  font-size: 2rem;
+  color: var(--blue);
+  border-top: var(--border);
+}
+
+.footer .credit span {
+  color: var(--orange);
+}
+
 /* media queries */
 
 @media (max-width: 1091px) {
