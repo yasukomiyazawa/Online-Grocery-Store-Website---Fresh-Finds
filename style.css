@@ -7,6 +7,7 @@
   --yellow: rgb(245, 245, 29);
   --orange: rgb(255, 167, 5);
   --black: rgb(4, 4, 4);
+  --light-grey: rgb(74, 74, 74);
   --box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
   --border: 0.2rem solid rgba(0, 0, 0, 0.1);
   --outline: 0.1rem solid rgba(0, 0, 0, 0.1);
@@ -311,7 +312,7 @@ section {
 }
 
 .home .content p {
-  color: rgb(74, 74, 74);
+  color: var(--light-grey);
   font-size: 1.7rem;
   padding: 1rem 0;
   line-height: 1.8;
@@ -351,8 +352,92 @@ section {
 .features .box-container .box p {
   font-size: 1.5rem;
   line-height: 1.8;
-  color: rgb(74, 74, 74);
+  color: var(--light-grey);
   padding: 1rem 0;
+}
+
+.products .product-slider {
+  padding: 1rem;
+}
+
+.products .product-slider:first-child {
+  padding: 2rem;
+}
+
+.products .product-slider .box {
+  background: #fff;
+  border-radius: 0.5rem;
+  text-align: center;
+  padding: 3rem 2rem;
+  outline-offset: -1rem;
+  outline: var(--outline);
+  box-shadow: var(--box-shadow);
+  transition: 0.2s linear;
+}
+
+.products .product-slider .box:hover {
+  outline-offset: 0rem;
+  outline: var(--outline-hover);
+}
+
+.products .product-slider .box img {
+  height: 20rem;
+}
+
+.products .product-slider .box h3 {
+  font-size: 2.5rem;
+  color: var(--blue);
+}
+
+.products .product-slider .box .price {
+  font-size: 2rem;
+  color: var(--);
+  padding: 0.5rem 0;
+  color: var(--light-grey);
+}
+
+.products .product-slider .box .stars i {
+  font-size: 1.7rem;
+  color: var(--orange);
+  padding: 0.5rem 0;
+}
+
+.categories .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+  gap: 1.5rem;
+}
+
+.categories .box-container .box {
+  padding: 3rem;
+  border-radius: 0.5rem;
+  background: #fff;
+  box-shadow: var(--box-shadow);
+  outline: var(--outline);
+  outline-offset: -1rem;
+  text-align: center;
+}
+
+.categories .box-container .box:hover {
+  outline: var(--outline-hover);
+  outline-offset: 0rem;
+}
+
+.categories .box-container .box img {
+  margin: 1rem 0;
+  height: 15rem;
+}
+
+.categories .box-container .box h3 {
+  font-size: 2rem;
+  color: var(--blue);
+  line-height: 1.8;
+}
+
+.categories .box-container .box p {
+  font-size: 1.7rem;
+  color: var(--light-grey);
+  line-height: 1.8;
 }
 
 /* media queries */
